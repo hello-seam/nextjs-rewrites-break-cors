@@ -1,5 +1,7 @@
 # NextJS Rewrites Break CORS
 
+[Link to Issue on NextJS](https://github.com/vercel/next.js/issues/11930)
+
 ## Problem
 
 When using rewrites, we expect endpoints to be able to handle CORS, but nextjs does custom CORS handling
@@ -17,3 +19,4 @@ curl -v 'http://localhost:3000/api' \
 
 3. Look at server logs. If the endpoint was executed, you would have seen `nextjs will never log this line with OPTIONS and an Origin header`
 in the server console
+
